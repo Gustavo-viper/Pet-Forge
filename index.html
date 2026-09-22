@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Forge Pet — Estilo Pou</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app">
+<header>
+  <div class="logo">F</div>
+  <div><h1>Forge Pet</h1><small>Forge Studios • Estilo Pou</small></div>
+  <div class="coins">🪙 <b id="coins">100</b></div>
+</header>
+
+<section class="layout">
+  <article class="panel">
+    <div class="heading"><div><small>SEU PET</small><h2>Olá, <span id="name">Bunny</span>!</h2></div><button id="rename">✏️</button></div>
+    <div class="room">
+      <div class="shelf"></div><div class="lamp"></div>
+      <div id="pet" class="pet" aria-label="Coelho virtual">
+        <div class="ear left"></div><div class="ear right"></div>
+        <div class="face">
+          <div class="eye left"></div><div class="eye right"></div>
+          <div class="cheek left"></div><div class="cheek right"></div>
+          <div id="mouth" class="mouth"></div>
+        </div>
+        <div class="belly"></div>
+      </div>
+      <div id="mood" class="mood">Estou feliz! 💖</div>
+      <div id="foodTarget" class="food-target">👄<small>Leve a comida até aqui!</small></div>
+    </div>
+    <div class="level">NÍVEL <b id="level">1</b><div class="bar"><i id="xp"></i></div></div>
+    <div id="stats" class="stats"></div>
+  </article>
+
+  <aside>
+    <section class="panel">
+      <small>ALIMENTAÇÃO</small><h2>Alimente seu pet</h2>
+      <p class="hint">Arraste a comidinha até a boca do Bunny. 🥕</p>
+      <div class="food-tray">
+        <button class="food" draggable="true" data-food="🥕" data-value="18">🥕<span>Cenoura</span></button>
+        <button class="food" draggable="true" data-food="🍎" data-value="12">🍎<span>Maçã</span></button>
+        <button class="food" draggable="true" data-food="🍓" data-value="10">🍓<span>Morango</span></button>
+        <button class="food" draggable="true" data-food="🥬" data-value="15">🥬<span>Folha</span></button>
+      </div>
+      <button id="feedButton" class="primary">🥕 Escolher uma comida</button>
+    </section>
+
+    <section class="panel">
+      <small>OUTROS CUIDADOS</small><h2>Cuide dele</h2>
+      <div class="actions">
+        <button data-a="play">🎾<b>Brincar</b></button>
+        <button data-a="sleep">🌙<b>Dormir</b></button>
+        <button data-a="bath">🛁<b>Banho</b></button>
+        <button data-a="pet">🤗<b>Carinho</b></button>
+      </div>
+    </section>
+
+    <section class="panel">
+      <small>MISSÃO DIÁRIA</small><h2>Cuidados do dia</h2>
+      <p id="mission">0/3 cuidados</p><div class="bar"><i id="missionBar"></i></div>
+      <h2>Diário</h2><div id="log"></div>
+    </section>
+  </aside>
+</section>
+<footer>Forge Studios © 2026 • Protótipo inspirado em mecânicas de pet virtual</footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
