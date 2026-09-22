@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+<title>Forge Palavras Ocultas</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<header>
+  <div><small>FORGE STUDIOS</small><h1>🔎 Palavras Ocultas</h1></div>
+  <div class="coins">🪙 <b id="coins">100</b></div>
+</header>
+
+<section class="hud">
+  <div><span>Nível</span><b id="level">1</b></div>
+  <div><span>Pontos</span><b id="score">0</b></div>
+  <div><span>Tempo</span><b id="time">120</b>s</div>
+</section>
+
+<main>
+  <div class="theme">TEMA: <strong id="theme">ANIMAIS</strong></div>
+  <p class="instruction">Encontre todas as palavras. Toque na primeira e na última letra.</p>
+
+  <div id="grid" class="grid" aria-label="Caça-palavras"></div>
+
+  <section class="words">
+    <h2>🔍 Encontre</h2>
+    <div id="wordList"></div>
+  </section>
+
+  <div class="actions">
+    <button id="hint">💡 Dica <span>10🪙</span></button>
+    <button id="newGame">🔄 Novo jogo</button>
+  </div>
+
+  <div id="message" class="message">Boa sorte! Encontre as palavras 👀</div>
+</main>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

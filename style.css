@@ -1,0 +1,27 @@
+*{box-sizing:border-box;margin:0;padding:0}
+:root{font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:#070b16;color:#f4f7ff}
+body{min-height:100vh;background:radial-gradient(circle at 50% 0,#203563,#070b16 65%);padding:14px}
+.app{max-width:720px;margin:auto}
+header{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+header small{letter-spacing:3px;color:#71a8ff;font-size:10px}
+h1{font-size:clamp(23px,6vw,34px)}
+.coins{background:#111c33;border:1px solid #30466e;padding:10px 14px;border-radius:15px;font-size:18px}
+.hud{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px}
+.hud div{background:#10192c;border:1px solid #293b5e;border-radius:13px;padding:9px;text-align:center}
+.hud span{display:block;font-size:11px;color:#91a5c9}.hud b{font-size:20px}
+main{background:#0c1425;border:1px solid #293d64;border-radius:22px;padding:16px;box-shadow:0 20px 70px #0007}
+.theme{text-align:center;color:#83b6ff;font-size:12px;letter-spacing:2px}
+.instruction{text-align:center;color:#aab9d4;font-size:13px;margin:7px 0 14px}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:4px;max-width:620px;margin:auto;user-select:none;touch-action:none}
+.cell{aspect-ratio:1;border:1px solid #2d4166;background:#16233c;border-radius:7px;display:grid;place-items:center;font-weight:800;font-size:clamp(13px,4vw,21px);cursor:pointer;transition:.12s}
+.cell.selected{background:#3977d5;border-color:#8bc1ff;transform:scale(1.04)}
+.cell.found{background:#245f4d;border-color:#6be1ad;color:#d8fff0}
+.words{margin-top:18px}.words h2{font-size:16px;margin-bottom:9px}
+#wordList{display:flex;flex-wrap:wrap;gap:7px}
+.word{background:#17233b;border:1px solid #2d4268;padding:7px 10px;border-radius:10px;font-size:12px}
+.word.found{text-decoration:line-through;opacity:.45;background:#15352e}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:16px}
+button{border:1px solid #38527e;background:#172744;color:white;border-radius:13px;padding:12px;font-weight:800;cursor:pointer}
+button:hover{background:#22375b}button span{font-size:10px;color:#ffd76b}
+.message{text-align:center;min-height:22px;margin-top:12px;color:#8fb9ff;font-size:13px}
+@media(max-width:430px){body{padding:8px}.grid{gap:3px}.cell{border-radius:5px}.main{padding:12px}}
